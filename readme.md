@@ -8,14 +8,18 @@ Python 3.x
 
 ## Usage
 1. Clone the Repository:
-  `git clone https://github.com/your-username/combine-text-files.git`
+  ```
+  git clone https://github.com/your-username/combine-text-files.git
+  ```
 1. Edit the code:
   ```
   1- Add folder path that contain text files
   2- Add output text file path (corpus)
   ```
 1. Run the Script:
-  `python3 GenerateCorpus.py`
+  ```
+  python3 GenerateCorpus.py
+  ```
   
 The combined corpus will be generated as corpus.txt in the output directory.
 
