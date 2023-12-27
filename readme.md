@@ -7,13 +7,12 @@ This project provides a simple Python script to combine multiple text files into
 Python 3.x
 
 ## Usage
-1.Clone the Repository:
-  bash
+1. Clone the Repository:
   'git clone https://github.com/your-username/combine-text-files.git'
-2.Edit the code
+1. Edit the code:
   'Add folder path that contain text files'
   'Add output text file path (corpus)'
-3.Run the Script:
+1. Run the Script:
   'python3 GenerateCorpus.py'
   
 The combined corpus will be generated as corpus.txt in the output directory.
