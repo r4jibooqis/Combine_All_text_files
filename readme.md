@@ -1,12 +1,12 @@
 # Combine Text Files into Corpus
 
-### Overview
+## Overview
 This project provides a simple Python script to combine multiple text files into a single corpus file. The corpus file can be useful for various natural language processing (NLP) tasks, such as text analysis, machine learning, or data preprocessing.
 
-### Requirements
+## Requirements
 Python 3.x
 
-### Usage
+## Usage
 1.Clone the Repository:
   bash
   'git clone https://github.com/your-username/combine-text-files.git'
@@ -18,6 +18,6 @@ Python 3.x
   
 The combined corpus will be generated as corpus.txt in the output directory.
 
-### Acknowledgments
+## Acknowledgments
 This project was inspired by the need for a simple tool to create a text corpus from multiple text files.
 Feel free to contribute, report issues, or provide suggestions!
