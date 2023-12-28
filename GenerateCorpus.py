@@ -15,27 +15,33 @@ def RenameFiles(folder_path):
 
 ########## funciton for combining all textfiles in one text file to be corpus ##########
 def createCorpus(folder_path,output_file):
+    num_words = 10 #number of words in each line
     count = 1   #count the number of words
     string = ""     #store words
 
     # Open output file
     output_text = open(output_file,'w',encoding='utf-8')
 
+    # get all text files
     for filename in os.listdir(folder_path):
         if filename.endswith(".txt"):
             with open(folder_path+"\\"+filename, 'r', encoding='utf-8') as file:
 
-                # create line as string and write it in output_text
+                # Process each line in the input file
                 for line in file:
+                    words = line.strip().split()
+                    
+                    # Create lines with the specified number of words
+                    for word in words:
+                        # change the number ==> number of words in one line
+                        if (count%num_words == 0):
+                            string = string + "\n"
+                            output_text.write(string)
+                            string = ""
+                        # else add word to the string line
+                        string = string + word +" "
+                        count = count + 1
 
-                    # change the number ==> number of words in one line
-                    if (count%7 == 0):
-                        string = string + "\n"
-                        output_text.write(string)
-                        string = ""
-
-                    string = string + line.strip() +" "
-                    count = count + 1
     # close output file
     output_text.close()
 
